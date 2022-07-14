@@ -7,21 +7,21 @@ const guestList = [
 ['Alia Hasan', '01. Jamaica'], 
 ['Alia Hasan', '01. Jamaica'], 
 ['Alia Hasan', '01. Jamaica'], 
-['eausheutneoasuheosu', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Aleezeh Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
+['Moiz Hasan', '01. Jamaica'], 
+['Alia Hasan', '11. Jamaica'], 
+['Alia Hasan', '12. Jamaica'], 
+['Alia Hasan', '13. Jamaica'], 
+['Alia Hasan', '14. Jamaica'], 
+['Alia Hasan', '15. Jamaica'], 
+['Alia Hasan', '16. Jamaica'], 
+['Alia Hasan', '17. Jamaica'], 
+['Alia Hasan', '18. Jamaica'], 
+['Alia Hasan', '19. Jamaica'], 
+['Alia Hasan', '20. Jamaica'], 
+['Aleezeh Hasan', '21. Jamaica'], 
+['Alia Hasan', '22. Jamaica'], 
+['Alia Hasan', '23. Jamaica'], 
+['Alia Hasan', '24. Jamaica'], 
 ['Alia Hasan', '01. Jamaica'], 
 ['Alia Hasan', '01. Jamaica'], 
 ['Alia Hasan', '01. Jamaica'], 
@@ -32,7 +32,7 @@ const guestList = [
 ['Alia Hasan', '01. Jamaica'], 
 ['Alia Hasan', '01. Jamaica'], 
 ['Alia Hasan', '01. Jamaica'], 
-['Alia Hasan', '01. Jamaica'], 
+['Alia Hasan', '25. Jamaica'], 
 ['Alia Hasan', '01. Jamaica'], 
 ['Alia Hasan', '01. Jamaica'], 
 ['Alia Hasan', '01. Jamaica'], 
@@ -72,9 +72,9 @@ var intr = setInterval(() => {
         var j = i+rowCount <= guestList.length ? i+rowCount : guestList.length;
         createTable(guestList.slice(i,j));
         i+= rowCount;
-      }, 1000)
+      }, 10000)
 };
 
 // Initialize
 createTable(guestList.slice(0,rowCount));
-//myFunc01();
+myFunc01();

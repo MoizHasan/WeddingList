@@ -1,5 +1,6 @@
 body {
   font-family: calibri;
+  background-color: #ffdede;
 }
 
 table {
@@ -14,18 +15,26 @@ th {
   text-align: left;
   padding: 8px;
   width: 50%;
+  color: #8a7432;
+}
+
+td {
+  font-size: 1.3em;
+  animation-name: flip;
+  animation-delay: -2s;
+  animation-duration: 8s;
 }
 
 th {
-  background-color: #ccd;
+  font-size: 2em;
 }
 
 tr:nth-child(even) {
-  background-color: #ffdede;
+  background-color: #fff;
 }
 
 tr:nth-child(odd) {
-  background-color: #f7f2c8;
+  background-color: #ffdede;
 }
 
 .tableHeader {
@@ -34,7 +43,7 @@ tr:nth-child(odd) {
 
 #bigGold {
   display: inline;
-  color: #eddd8b;
+  color: #8a7432;
   font-size: 3.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
@@ -45,4 +54,16 @@ tr:nth-child(odd) {
   vertical-align: bottom;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(00deg);
+  }
 }
