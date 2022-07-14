@@ -77,4 +77,4 @@ var intr = setInterval(() => {
 
 // Initialize
 createTable(guestList.slice(0,rowCount));
-myFunc01();
+//myFunc01();
