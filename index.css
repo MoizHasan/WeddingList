@@ -1,0 +1,41 @@
+body {
+  font-family: calibri;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top:10px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 50%;
+}
+
+th {
+  background-color: #ccd;
+}
+
+tr:nth-child(even) {
+  background-color: #ffdede;
+}
+
+tr:nth-child(odd) {
+  background-color: #f7f2c8;
+}
+
+.tableHeader {
+  display: inline;
+}
+
+#bigGold {
+  color: #d9cd75;
+  font-size: 3.5em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
