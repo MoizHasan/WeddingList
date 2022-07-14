@@ -64,9 +64,9 @@ function createTable(tableData) {
     }
 
 // How many rows should be shown
-const rowCount = 10;
+const rowCount = 14;
 var myFunc01 = () => {
-var i = 0;
+var i = rowCount;
 var intr = setInterval(() => {
         if (i+rowCount > guestList.length) {i = 0;}
         var j = i+rowCount <= guestList.length ? i+rowCount : guestList.length;
