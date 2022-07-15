@@ -325,7 +325,7 @@ var intr = setInterval(() => {
         var j = i+rowCount <= guestList.length ? i+rowCount : guestList.length;
         createTable(guestList.slice(i,j));
         i+= rowCount;
-      }, 10000)
+      }, 20000)
 };
 
 // Initialize
