@@ -70,9 +70,10 @@ const guestList = [
   ['Faizoon Jabir','10. Ireland'],
   ['Farah Salahuddin','22. Mexico'],
   ['Farha Ikramuddin','13. Palestine'],
+  ['Farhat Kamal', '14. Morocco'],
   ['Farha Khan','12. Turkey'],
   ['Farheen Abbas','2. Canada'],
-  ['Farheen Shah','4. Jamaica'],
+  ['Farheen Shah','4. China'],
   ['Farheen Turk','5. Brazil'],
   ['Farida Kathawalla','13. Palestine'],
   ['Farooqua Jafri','11. Poland'],
@@ -97,7 +98,7 @@ const guestList = [
   ['Heena Jaffri','6. Wales'],
   ['Hiba Ansari','29. South Korea'],
   ['Hina Islam','1. United States'],
-  ['Hina Javed','14. Morocco'],
+  ['Hina Javed','10. Ireland'],
   ['Hinnah Abid','23. Bangladesh'],
   ['Huda Naveed','5. Brazil'],
   ['Humera Akmal','4. Jamaica'],
@@ -119,8 +120,7 @@ const guestList = [
   ['Jalpa Mathur','26. Singapore'],
   ['Jamal Syed','15. Italy'],
   ['Jamila Momin','12. Turkey'],
-  ['Javed Ghauri','14. Morocco'],
-  ['Javed Ghauri','15. Italy'],
+  ['Javed Ghauri','14. Ireland'],
   ['Jess Malik','30. Australia'],
   ['Junaid Ikramuddin','20. Qatar'],
   ['Kaazim Abbas','6. Wales'],
@@ -139,7 +139,6 @@ const guestList = [
   ['Maliha Abbas','2. Canada'],
   ['Mariam Zaidi','8. Spain'],
   ['Maryam Khan','10. Ireland'],
-  ['Maryam Khan','14. Morocco'],
   ['Mayme','31. Ethiopia'],
   ['Meekal Toor','6. Wales'],
   ['Meesha Awan','28. Japan'],
@@ -254,7 +253,7 @@ const guestList = [
   ['Sikandar Bashir','16. Greece'],
   ['Sikandar Dar','18. Netherlands'],
   ['Sima Gilani','13. Palestine'],
-  ['Simi Akhtar','13. Palestine'],
+  ['Rashida','13. Palestine'],
   ['Sofia D','1. United States'],
   ['Sohail Ahmed Zubairi','16. Greece'],
   ['Sumaira Misba','5. Brazil'],
@@ -332,7 +331,7 @@ const intr = setInterval(() => {
         } else {
           i+= rowCount*3;
         }
-      }, 20000)
+      }, 24000)
 };
 
 // Initialize
