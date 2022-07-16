@@ -77,7 +77,10 @@ tr:nth-child(odd) {
     display: none;
   }
 
-  table {
-    width: 100%;
+  #bigGold {
+    font-size: 14vw;
+  }
+  table * {
+    font-size: 7vw;
   }
 }
