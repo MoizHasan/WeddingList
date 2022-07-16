@@ -318,12 +318,12 @@ function createTable(tableData, selector = 'table') {
 
 // How many rows should be shown
 const rowCount = 12;
-var timedDisplay = () => {
-var i = rowCount;
-var intr = setInterval(() => {
-        var j = i+rowCount;
-        var k = j+rowCount;
-        var l = k+rowCount <= guestList.length ? k+rowCount : guestList.length;
+const timedDisplay = () => {
+var i = rowCount*3;
+const intr = setInterval(() => {
+        const j = i+rowCount;
+        const k = j+rowCount;
+        const l = k+rowCount <= guestList.length ? k+rowCount : guestList.length;
         createTable(guestList.slice(i,j), '#left');
         createTable(guestList.slice(j,k), '#middle');
         createTable(guestList.slice(k,l), '#right');
@@ -332,7 +332,7 @@ var intr = setInterval(() => {
         } else {
           i+= rowCount*3;
         }
-      }, 30000)
+      }, 20000)
 };
 
 // Initialize
