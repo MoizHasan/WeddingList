@@ -56,9 +56,9 @@ const guestList = [
   ['Brittany Becker','24. Egypt'],
   ['Bushra Dar','12. Turkey'],
   ['Connie Ghanchi','21. Russia'],
-  ['Coordinator Taylor Oakes','31. Ethiopia'],
-  ["Coordinator Taylor's assistant 1",'31. Ethiopia'],
-  ["Coordinator Taylor's assistant 2",'31. Ethiopia'],
+  ['Coord Taylor Oakes','31. Ethiopia'],
+  ["Coord Taylor's assistant 1",'31. Ethiopia'],
+  ["Coord Taylor's assistant 2",'31. Ethiopia'],
   ['Danish Mahmood','19. Somalia'],
   ['Eamaan Turk','27. China'],
   ['Ebrahim Ghanchi','21. Russia'],
@@ -317,7 +317,7 @@ function createTable(tableData, selector = 'table') {
     }
 
 // How many rows should be shown
-const rowCount = 14;
+const rowCount = 12;
 var timedDisplay = () => {
 var i = rowCount;
 var intr = setInterval(() => {
@@ -336,8 +336,11 @@ var intr = setInterval(() => {
 };
 
 // Initialize
-//createTable(guestList.slice(0,rowCount));
+if( screen.width <= 768 ) {
+createTable(guestList);
+} else {
 createTable(guestList.slice(0,rowCount), '#left');
 createTable(guestList.slice(rowCount,rowCount*2), '#middle');
 createTable(guestList.slice(rowCount*2,rowCount*3), '#right');
 timedDisplay();
+}

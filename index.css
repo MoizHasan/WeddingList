@@ -70,3 +70,14 @@ tr:nth-child(odd) {
     transform: rotateX(00deg);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #middle, #right {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+  }
+}
