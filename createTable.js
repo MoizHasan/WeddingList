@@ -295,14 +295,14 @@ const guestList = [
   ['Zoya Abbas','6. Wales']
 ];
 
-function createTable(tableData) {
-      const existing = document.querySelectorAll('td');
+function createTable(tableData, selector = 'table') {
+      const existing = document.querySelectorAll(selector + ' td');
       if (existing.length > 0) {
         Array.prototype.forEach.call( existing, function( node ) {
           node.parentNode.removeChild( node );
       });
       }
-      var table = document.querySelector('table');
+      var table = document.querySelector(selector);
       var row = {};
       var cell = {};
     
@@ -318,16 +318,26 @@ function createTable(tableData) {
 
 // How many rows should be shown
 const rowCount = 14;
-var myFunc01 = () => {
+var timedDisplay = () => {
 var i = rowCount;
 var intr = setInterval(() => {
-        if (i+rowCount > guestList.length) {i = 0;}
-        var j = i+rowCount <= guestList.length ? i+rowCount : guestList.length;
-        createTable(guestList.slice(i,j));
-        i+= rowCount;
-      }, 20000)
+        var j = i+rowCount;
+        var k = j+rowCount;
+        var l = k+rowCount <= guestList.length ? k+rowCount : guestList.length;
+        createTable(guestList.slice(i,j), '#left');
+        createTable(guestList.slice(j,k), '#middle');
+        createTable(guestList.slice(k,l), '#right');
+        if (l === guestList.length) {
+          i = 0;
+        } else {
+          i+= rowCount*3;
+        }
+      }, 30000)
 };
 
 // Initialize
-createTable(guestList.slice(0,rowCount));
-myFunc01();
+//createTable(guestList.slice(0,rowCount));
+createTable(guestList.slice(0,rowCount), '#left');
+createTable(guestList.slice(rowCount,rowCount*2), '#middle');
+createTable(guestList.slice(rowCount*2,rowCount*3), '#right');
+timedDisplay();
